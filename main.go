@@ -53,7 +53,7 @@ func main() {
 		methodsJoined := strings.Join(availableMethods, " ")
 		fmt.Printf("%s: %s\n", k, methodsJoined)
 	}
-	fmt.Printf("Now serving at %s\n", addr)
+	fmt.Printf("Now serving at http://%s\n", addr)
 
 	log.Fatal(http.ListenAndServe(addr, nil))
 }
